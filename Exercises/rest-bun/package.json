@@ -1,0 +1,22 @@
+{
+  "name": "bun-rest",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts",
+    "build": "bun build src/index.ts",
+    "start": "NODE_ENV=production bun run src/index.ts",
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "@elysiajs/eden": "^1.0.14",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@elysiajs/swagger": "^1.0.5",
+    "elysia": "^1.0.25"
+  }
+}
